@@ -1,0 +1,12 @@
+{
+    "folders": [
+        {
+            "name": "Sweeney",
+            "path": "."
+        },
+        {
+            "name": "Sweeney App",
+            "path": "apps/sweeney"
+        }
+    ]
+}
