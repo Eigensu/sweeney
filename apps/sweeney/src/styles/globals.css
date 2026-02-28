@@ -7,6 +7,13 @@ body {
   padding: 0;
 }
 
+/* Premium nav link hover glow */
+.nav-menu-link:focus-visible {
+  outline: 2px solid #c8a96e;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 @font-face {
   font-family: "Ability";
   src: url("/fonts/Qwerty Ability - Personal Use.otf") format("opentype");

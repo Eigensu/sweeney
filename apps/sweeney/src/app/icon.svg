@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#01382E"/>
+  <!-- Outer gold ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#c8a96e" stroke-width="2.5" opacity="0.5"/>
+  <!-- Stylized S letterform -->
+  <path
+    d="M310 160c0-30-28-48-60-48-36 0-62 22-62 54 0 32 22 44 56 56 38 14 72 30 72 74 0 42-34 72-78 72-40 0-72-24-72-58"
+    stroke="#c8a96e"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <!-- Top serif flourish -->
+  <path
+    d="M310 160c12-2 22 2 28 8"
+    stroke="#c8a96e"
+    stroke-width="6"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.7"
+  />
+  <!-- Bottom serif flourish -->
+  <path
+    d="M166 300c-12 2-22-2-28-8"
+    stroke="#c8a96e"
+    stroke-width="6"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.7"
+  />
+  <!-- Inner decorative dot top -->
+  <circle cx="256" cy="96" r="3.5" fill="#c8a96e" opacity="0.6"/>
+  <!-- Inner decorative dot bottom -->
+  <circle cx="256" cy="416" r="3.5" fill="#c8a96e" opacity="0.6"/>
+</svg>
