@@ -12,9 +12,6 @@ build/
 # Turbo
 .turbo/
 
-# pnpm
-pnpm-lock.yaml
-
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
