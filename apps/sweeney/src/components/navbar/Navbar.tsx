@@ -79,7 +79,7 @@ export default function Navbar({
         }}
       >
         {/* Brand Logo */}
-        <div className="flex-1">
+        <div className="flex flex-col items-center">
           <h1
             className="m-0 text-[#01382E]"
             style={{
@@ -91,6 +91,21 @@ export default function Navbar({
           >
             Sweeney
           </h1>
+          <a
+            href="https://maps.app.goo.gl/ynbyxbq778LUuQBq6?g_st=ic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="m-0 mt-[-0.5rem] tracking-[0.2em] text-[#01382E] transition-opacity hover:opacity-70"
+            style={{
+              fontFamily: "var(--font-poppins), sans-serif",
+              fontSize: "clamp(0.6rem, 1.5vw, 0.75rem)",
+              fontWeight: 500,
+              userSelect: "none",
+              textDecoration: "none",
+            }}
+          >
+            KHAR | MUMBAI
+          </a>
         </div>
 
         {/* Hamburger button */}
