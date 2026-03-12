@@ -17,7 +17,7 @@ export default function HamburgerButton({ isOpen, toggle, className = "" }: Hamb
       <div className="relative flex h-5 w-7 flex-col items-center justify-center">
         {/* Top bar */}
         <span
-          className="absolute left-0 block h-[2px] w-full rounded-full transition-all duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1)]"
+          className="absolute left-0 block h-[3px] w-full rounded-full transition-all duration-500 ease-[cubic-bezier(0.77,0.2,0.05,1)]"
           style={{
             backgroundColor: isOpen ? "#faf9f6" : "#01382E",
             top: isOpen ? "50%" : "0",
@@ -26,7 +26,7 @@ export default function HamburgerButton({ isOpen, toggle, className = "" }: Hamb
         />
         {/* Middle bar */}
         <span
-          className="absolute top-1/2 left-0 block h-[2px] rounded-full transition-all duration-400 ease-[cubic-bezier(0.77,0.2,0.05,1)]"
+          className="absolute top-1/2 left-0 block h-[3px] rounded-full transition-all duration-400 ease-[cubic-bezier(0.77,0.2,0.05,1)]"
           style={{
             backgroundColor: isOpen ? "#faf9f6" : "#01382E",
             width: isOpen ? "0%" : "70%",
