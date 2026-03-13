@@ -6,9 +6,7 @@ import MenuOverlay, { type NavLink } from "./MenuOverlay";
 
 const DEFAULT_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "Menu", href: "/" },
   { label: "Reservations", href: "/" },
-  { label: "Our Story", href: "/" },
   { label: "Contact", href: "/" },
 ];
 
@@ -79,7 +77,11 @@ export default function Navbar({
         }}
       >
         {/* Brand Logo */}
-        <div className="flex flex-col items-center">
+        <div
+          className={`flex flex-col items-center transition-opacity duration-300 ${
+            isOpen ? "pointer-events-none opacity-0" : "opacity-100"
+          }`}
+        >
           <h1
             className="m-0 text-[#01382E]"
             style={{
@@ -97,8 +99,8 @@ export default function Navbar({
             rel="noopener noreferrer"
             className="m-0 mt-[-0.5rem] tracking-[0.2em] text-[#01382E] transition-opacity hover:opacity-70"
             style={{
-              fontFamily: "var(--font-poppins), sans-serif",
-              fontSize: "clamp(0.6rem, 1.5vw, 0.75rem)",
+              fontFamily: "var(--font-montserrat), sans-serif",
+              fontSize: "clamp(0.55rem, 1.2vw, 0.7rem)",
               fontWeight: 500,
               userSelect: "none",
               textDecoration: "none",

@@ -8,7 +8,7 @@ export default function Home() {
         minHeight: "100vh",
         width: "100%",
         overflowX: "hidden",
-        backgroundImage: "url('/herowall.png')",
+        backgroundImage: "url('/herowall2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

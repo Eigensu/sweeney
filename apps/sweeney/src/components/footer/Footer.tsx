@@ -21,7 +21,7 @@ export default function Footer() {
               Sweeney
             </h2>
           </div>
-          <p className="max-w-xs font-[family-name:var(--font-poppins)] text-xs leading-relaxed opacity-60">
+          <p className="max-w-xs font-[family-name:var(--font-montserrat)] text-xs leading-relaxed opacity-60">
             A refined dining experience inspired by the charm of a Thai village, thoughtfully
             blended with subtle European elegance.
           </p>
@@ -30,22 +30,22 @@ export default function Footer() {
         {/* Contact info - Restored to vertical layout with tighter gaps for height control */}
         <div className="flex flex-1 flex-col gap-6">
           <div className="flex flex-col gap-1">
-            <h3 className="font-[family-name:var(--font-poppins)] text-xs font-semibold tracking-[0.3em] uppercase opacity-60">
+            <h3 className="font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.3em] uppercase opacity-60">
               Location
             </h3>
-            <p className="font-[family-name:var(--font-poppins)] text-lg">Khar , Mumbai</p>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg">Khar , Mumbai</p>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-[family-name:var(--font-poppins)] text-xs font-semibold tracking-[0.3em] uppercase opacity-60">
+            <h3 className="font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.3em] uppercase opacity-60">
               Reservations
             </h3>
             <div className="flex flex-col gap-2">
-              <p className="max-w-sm font-[family-name:var(--font-poppins)] text-sm leading-relaxed opacity-60">
+              <p className="max-w-sm font-[family-name:var(--font-montserrat)] text-sm leading-relaxed opacity-60">
                 For table bookings and private inquiries, please reach out via the number below.
               </p>
-              <p className="font-[family-name:var(--font-poppins)] text-2xl font-light tracking-tight md:text-3xl">
-                +91 99000 00000
+              <p className="font-[family-name:var(--font-montserrat)] text-2xl font-light tracking-tight md:text-3xl">
+                +91 73042 95000
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center justify-between gap-4 border-t border-[#faf9f6]/5 font-[family-name:var(--font-poppins)] text-[9px] tracking-[0.25em] uppercase opacity-30 sm:flex-row">
+      <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center justify-between gap-4 border-t border-[#faf9f6]/5 font-[family-name:var(--font-montserrat)] text-[9px] tracking-[0.25em] uppercase opacity-30 sm:flex-row">
         <p>© 2026 Sweeney. All rights reserved.</p>
         <a
           href="mailto:work.eigensu@gmail.com"
