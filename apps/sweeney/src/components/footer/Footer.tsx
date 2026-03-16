@@ -54,7 +54,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="mx-auto mt-12 flex max-w-4xl flex-col items-center justify-between gap-4 border-t border-[#faf9f6]/5 font-[family-name:var(--font-montserrat)] text-[9px] tracking-[0.25em] uppercase opacity-30 sm:flex-row">
-        <p>© 2026 Sweeney. All rights reserved.</p>
+        <p>© 2026 Sweeney Access Unlimited Hospitality LLP. All rights reserved.</p>
         <a
           href="mailto:work.eigensu@gmail.com"
           className="font-semibold transition-opacity hover:opacity-100"
