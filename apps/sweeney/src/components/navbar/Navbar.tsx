@@ -6,16 +6,14 @@ import MenuOverlay, { type NavLink } from "./MenuOverlay";
 
 const DEFAULT_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
+  { label: "Menu", href: "/menu" },
   { label: "Reservations", href: "/" },
   { label: "Contact", href: "/" },
 ];
 
 interface NavbarProps {
-  /** Override the default navigation links */
   links?: NavLink[];
-  /** Brand name displayed in the navbar */
   brandName?: string;
-  /** Called when a menu link is clicked; receives the href */
   onNavigate?: (href: string) => void;
 }
 
