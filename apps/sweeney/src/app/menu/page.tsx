@@ -58,114 +58,94 @@ export default function MenuPage() {
           </h2>
           <div className="grid h-[1000px] w-full grid-cols-6 grid-rows-7 gap-2">
             {/* div1 */}
-            <div className="relative col-span-2 row-span-2 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[1] ? (
-                <Image src={foodImages[1]} alt="Food 1" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 1
-                </div>
-              )}
+            <div className="group relative col-span-2 row-span-2 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[1]}
+                alt="Food 1"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div2 */}
-            <div className="relative col-span-3 col-start-1 row-span-3 row-start-3 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[2] ? (
-                <Image
-                  src={foodImages[2]}
-                  alt="Food 2"
-                  fill
-                  className="object-cover object-bottom"
-                />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 2
-                </div>
-              )}
+            <div className="group relative col-span-3 col-start-1 row-span-3 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[2]}
+                alt="Food 2"
+                fill
+                className="object-cover object-bottom transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div3 */}
-            <div className="relative col-span-2 col-start-1 row-span-2 row-start-6 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[3] ? (
-                <Image src={foodImages[3]} alt="Food 3" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 3
-                </div>
-              )}
+            <div className="group relative col-span-2 col-start-1 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[3]}
+                alt="Food 3"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div4 */}
-            <div className="relative col-span-2 col-start-3 row-span-2 row-start-1 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[4] ? (
-                <Image src={foodImages[4]} alt="Food 4" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 4
-                </div>
-              )}
+            <div className="group relative col-span-2 col-start-3 row-span-2 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[4]}
+                alt="Food 4"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div5 */}
-            <div className="relative col-span-2 col-start-3 row-span-2 row-start-6 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[5] ? (
-                <Image src={foodImages[5]} alt="Food 5" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 5
-                </div>
-              )}
+            <div className="group relative col-span-2 col-start-3 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[5]}
+                alt="Food 5"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div6 */}
-            <div className="relative col-span-2 col-start-5 row-span-3 row-start-1 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[6] ? (
-                <Image src={foodImages[6]} alt="Food 6" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 6
-                </div>
-              )}
+            <div className="group relative col-span-2 col-start-5 row-span-3 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[6]}
+                alt="Food 6"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div7 */}
-            <div className="relative col-start-4 row-span-3 row-start-3 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[7] ? (
-                <Image src={foodImages[7]} alt="Food 7" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 7
-                </div>
-              )}
+            <div className="group relative col-start-4 row-span-3 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[7]}
+                alt="Food 7"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div8 */}
-            <div className="relative col-span-2 col-start-5 row-span-2 row-start-4 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[8] ? (
-                <Image
-                  src={foodImages[8]}
-                  alt="Food 8"
-                  fill
-                  className="object-cover object-[right_75%]"
-                />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 8
-                </div>
-              )}
+            <div className="group relative col-span-2 col-start-5 row-span-2 row-start-4 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[8]}
+                alt="Food 8"
+                fill
+                className="object-cover object-[right_60%] transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div9 */}
-            <div className="relative col-start-5 row-span-2 row-start-6 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[9] ? (
-                <Image src={foodImages[9]} alt="Food 9" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 9
-                </div>
-              )}
+            <div className="group relative col-start-5 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[9]}
+                alt="Food 9"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div10 */}
-            <div className="relative col-start-6 row-span-2 row-start-6 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              {foodImages[10] ? (
-                <Image src={foodImages[10]} alt="Food 10" fill className="object-cover" />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center font-light text-[#01382E]/20 italic">
-                  Food 10
-                </div>
-              )}
+            <div className="group relative col-start-6 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={foodImages[10]}
+                alt="Food 10"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </section>
@@ -177,32 +157,67 @@ export default function MenuPage() {
           </h2>
           <div className="grid h-[800px] w-full grid-cols-6 grid-rows-6 gap-2">
             {/* div1 */}
-            <div className="relative col-span-2 row-span-2 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[0]} alt="Drink 1" fill className="object-cover" />
+            <div className="group relative col-span-2 row-span-2 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[0]}
+                alt="Drink 1"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div2 */}
-            <div className="relative col-span-2 col-start-1 row-span-4 row-start-3 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[1]} alt="Drink 2" fill className="object-cover" />
+            <div className="group relative col-span-2 col-start-1 row-span-4 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[1]}
+                alt="Drink 2"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div3 */}
-            <div className="relative col-start-3 row-span-6 row-start-1 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[2]} alt="Drink 3" fill className="object-cover" />
+            <div className="group relative col-start-3 row-span-6 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[2]}
+                alt="Drink 3"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div4 */}
-            <div className="relative col-start-6 row-span-4 row-start-1 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[3]} alt="Drink 4" fill className="object-cover" />
+            <div className="group relative col-start-6 row-span-4 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[3]}
+                alt="Drink 4"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div5 */}
-            <div className="relative col-span-2 col-start-4 row-span-3 row-start-1 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[4]} alt="Drink 5" fill className="object-cover" />
+            <div className="group relative col-span-2 col-start-4 row-span-3 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[4]}
+                alt="Drink 5"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div6 */}
-            <div className="relative col-span-2 col-start-4 row-span-3 row-start-4 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[5]} alt="Drink 6" fill className="object-cover" />
+            <div className="group relative col-span-2 col-start-4 row-span-3 row-start-4 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[5]}
+                alt="Drink 6"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             {/* div7 */}
-            <div className="relative col-start-6 row-span-2 row-start-5 overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
-              <Image src={beverageImages[6]} alt="Drink 7" fill className="object-cover" />
+            <div className="group relative col-start-6 row-span-2 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+              <Image
+                src={beverageImages[6]}
+                alt="Drink 7"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </section>

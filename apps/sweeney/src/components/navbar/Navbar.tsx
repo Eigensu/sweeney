@@ -25,11 +25,15 @@ export default function Navbar({
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (typeof window !== "undefined") {
         const currentScrollY = window.scrollY;
+        const heroHeight = window.innerHeight * 0.8; // Approximate hero section height
+
+        setIsScrolledPastHero(currentScrollY > heroHeight);
 
         // Hide navbar if scrolling down and past 50px, show if scrolling up
         if (currentScrollY > lastScrollY && currentScrollY > 50 && !isOpen) {
@@ -77,7 +81,7 @@ export default function Navbar({
         {/* Brand Logo */}
         <div
           className={`flex flex-col items-center transition-opacity duration-300 ${
-            isOpen ? "pointer-events-none opacity-0" : "opacity-100"
+            isOpen || isScrolledPastHero ? "pointer-events-none opacity-0" : "opacity-100"
           }`}
         >
           <h1

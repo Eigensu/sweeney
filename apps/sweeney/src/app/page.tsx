@@ -1,58 +1,6 @@
 import Image from "next/image";
 
 export default function Home() {
-  const openingFeatureImage = "/food/00009843.JPG";
-
-  const landingGallery = [
-    {
-      src: "/food/Gai Hor Bai Toey.jpg",
-      alt: "Thai signature starter plated with herbs",
-      span: "col-span-2 row-span-2",
-    },
-    {
-      src: "/beverages/00009861.JPG",
-      alt: "Craft beverage at the bar",
-      span: "col-span-1 row-span-2",
-    },
-    {
-      src: "/food/grilled new Zealand lamb chops.jpg",
-      alt: "Grilled lamb preparation",
-      span: "col-span-1 row-span-1",
-    },
-    {
-      src: "/food/Truffle Honey Feta Parcel(1).jpg",
-      alt: "Truffle honey feta parcel",
-      span: "col-span-2 row-span-1",
-    },
-    {
-      src: "/beverages/00009857.JPG",
-      alt: "Signature drink with garnish",
-      span: "col-span-1 row-span-1",
-    },
-    {
-      src: "/food/mango sticky rice Crème brulee.jpg",
-      alt: "Dessert inspired by mango sticky rice",
-      span: "col-span-2 row-span-2",
-    },
-    {
-      src: "/food/French onion soup_.jpg",
-      alt: "French onion soup presentation",
-      span: "col-span-2 row-span-1",
-    },
-    {
-      src: "/beverages/00009865.JPG",
-      alt: "Cocktail at Sweeney",
-      span: "col-span-1 row-span-2",
-    },
-  ];
-
-  const mobileGallery = [
-    landingGallery[0],
-    landingGallery[2],
-    landingGallery[5],
-    landingGallery[7],
-  ];
-
   return (
     <main
       style={{
@@ -122,41 +70,69 @@ export default function Home() {
       </section>
 
       <section className="relative z-10 w-full px-4 pb-12 sm:px-8 md:px-12">
-        <div className="mx-auto grid w-full max-w-7xl gap-6 lg:grid-cols-12">
-          <article className="rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 p-6 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:p-8 lg:col-span-5">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.28em] uppercase opacity-70">
-              Reservations
-            </p>
-            <h2
-              className="mt-3"
-              style={{
-                fontFamily: 'var(--font-ability), "Ability", serif',
-                fontSize: "clamp(2.15rem, 4.2vw, 3.1rem)",
-                lineHeight: 1,
-              }}
-            >
-              Call Sweeney
-            </h2>
+        <div
+          className="mx-auto w-full max-w-7xl"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(7, 1fr)",
+            gridTemplateRows: "repeat(9, auto)",
+            gap: "8px",
+          }}
+        >
+          {/* Left card — experience */}
+          <article
+            className="flex flex-col justify-between gap-5 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 p-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:p-10"
+            style={{ gridColumn: "span 3 / span 3", gridRow: "span 5 / span 5" }}
+          >
+            <div className="flex flex-col gap-5">
+              <h2
+                style={{
+                  fontFamily: 'var(--font-ability), "Ability", serif',
+                  fontSize: "clamp(2.15rem, 4.2vw, 3.1rem)",
+                  lineHeight: 1,
+                }}
+              >
+                Our Story
+              </h2>
+              <div className="flex flex-col gap-4 font-[family-name:var(--font-poppins)] text-sm leading-relaxed sm:text-[0.98rem]">
+                <p>
+                  Sweeney is a home for Thai and European cuisine, rediscovered, refined and
+                  reimagined. Inspired by months of research and real kitchens, our food reflects
+                  how it’s truly cooked and lived with, from Thai households built on balance and
+                  sharing to Italian kitchens shaped by care and tradition.
+                </p>
+                <p>
+                  Every dish begins with memory and is carried forward with intention, preserving
+                  authenticity while gently evolving for today. Alongside the kitchen, our bar
+                  nurtures the next generation of talent through craft, discipline and quiet
+                  excellence.
+                </p>
+                <p>At Sweeney, home is where everything begins.</p>
+              </div>
+            </div>
             <a
-              href="tel:+917304295000"
-              className="mt-5 inline-block font-[family-name:var(--font-montserrat)] text-2xl font-light tracking-tight transition-opacity hover:opacity-70 sm:text-3xl"
-              aria-label="Call Sweeney on +91 73042 95000"
+              href="/menu"
+              className="block w-full border border-[#01382E] px-5 py-2.5 text-center font-[family-name:var(--font-poppins)] text-sm tracking-[0.15em] text-[#01382E] transition-colors duration-300 hover:bg-[#01382E]/5"
             >
-              +91 73042 95000
+              EXPLORE MENU
             </a>
-            <p className="mt-5 max-w-md font-[family-name:var(--font-poppins)] text-sm leading-relaxed sm:text-[0.98rem]">
-              For table bookings and private dining inquiries, connect directly with our team. We
-              will help you plan a thoughtful dining experience.
-            </p>
           </article>
 
-          <article className="overflow-hidden rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/65 shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] lg:col-span-7">
-            <div className="relative min-h-[320px] w-full sm:min-h-[380px]">
+          {/* Right card — image */}
+          <article
+            className="overflow-hidden rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/65 shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px]"
+            style={{
+              gridColumn: "span 4 / span 4",
+              gridColumnStart: 4,
+              gridRow: "span 5 / span 5",
+            }}
+          >
+            <div className="relative h-full min-h-[420px]">
               <Image
-                src={openingFeatureImage}
-                alt="Sweeney opening celebration"
+                src="/Malaika Arora.jpg"
+                alt="Malaika Arora at Sweeney"
                 fill
-                className="object-cover"
+                className="object-cover object-[100%_70%]"
                 sizes="(min-width: 1024px) 55vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#01382E]/70 via-[#01382E]/20 to-transparent" />
@@ -170,70 +146,48 @@ export default function Home() {
               </div>
             </div>
           </article>
-        </div>
-      </section>
 
-      <section className="relative z-10 w-full px-4 pb-28 sm:px-8 md:px-12">
-        <div className="mx-auto w-full max-w-7xl">
-          <div className="mb-8 text-center">
-            <p className="font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.28em] text-[#01382E]/80 uppercase">
-              A Glimpse Of Sweeney
-            </p>
-            <h2
-              className="mt-2 text-[#01382E] sm:hidden"
-              style={{
-                fontFamily: 'var(--font-ability), "Ability", serif',
-                fontSize: "clamp(2.1rem, 5vw, 3.3rem)",
-                lineHeight: 1.1,
-              }}
-            >
-              Crafted Moments
-            </h2>
-            <h2
-              className="mt-2 hidden text-[#01382E] sm:block"
-              style={{
-                fontFamily: 'var(--font-ability), "Ability", serif',
-                fontSize: "clamp(2.1rem, 5vw, 3.3rem)",
-                lineHeight: 1.1,
-              }}
-            >
-              Crafted Moments In A Better Grid
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3 sm:hidden">
-            {mobileGallery.map((image, index) => (
-              <div
-                key={`${image.src}-mobile`}
-                className={`group relative overflow-hidden rounded-xl border border-[#01382E]/15 bg-[#FAF9F6]/65 shadow-[0_10px_28px_rgba(1,56,46,0.1)] ${index === 0 ? "col-span-2 aspect-[16/10]" : "aspect-[4/5]"}`}
+          {/* Bottom card — reservation */}
+          <article
+            className="flex items-center justify-between gap-8 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-10 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px]"
+            style={{ gridColumn: "span 7 / span 7", gridRow: "span 4 / span 4", gridRowStart: 6 }}
+          >
+            {/* Left — heading + description */}
+            <div className="flex max-w-sm flex-col gap-3">
+              <h2
+                style={{
+                  fontFamily: 'var(--font-ability), "Ability", serif',
+                  fontSize: "clamp(2.15rem, 4.2vw, 3.1rem)",
+                  lineHeight: 1,
+                }}
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 639px) 100vw"
-                />
-              </div>
-            ))}
-          </div>
+                Make Reservations
+              </h2>
+              <p className="max-w-[320px] font-[family-name:var(--font-poppins)] text-sm leading-relaxed opacity-70 sm:text-[0.98rem]">
+                For table bookings and private dining inquiries, connect directly with our team. We
+                will help you plan a thoughtful dining experience.
+              </p>
+            </div>
 
-          <div className="hidden auto-rows-[150px] grid-cols-4 gap-3 sm:grid lg:auto-rows-[170px] lg:grid-cols-6">
-            {landingGallery.map((image) => (
-              <div
-                key={image.src}
-                className={`group relative overflow-hidden rounded-xl border border-[#01382E]/15 bg-[#FAF9F6]/65 shadow-[0_10px_28px_rgba(1,56,46,0.1)] ${image.span}`}
+            {/* Right — phone + WhatsApp */}
+            <div className="flex flex-col items-end gap-3 text-right">
+              <a
+                href="tel:+917304295000"
+                className="font-[family-name:var(--font-montserrat)] text-2xl font-light tracking-tight transition-opacity hover:opacity-70 sm:text-3xl"
+                aria-label="Call Sweeney on +91 73042 95000"
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(min-width: 1024px) 24vw, (min-width: 640px) 45vw, 100vw"
-                />
-              </div>
-            ))}
-          </div>
+                +91 73042 95000
+              </a>
+              <a
+                href="https://wa.me/917304295000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-[family-name:var(--font-poppins)] text-sm text-[#01382E]/70 underline underline-offset-4 hover:text-[#01382E]"
+              >
+                Eager to reserve? Message us.
+              </a>
+            </div>
+          </article>
         </div>
       </section>
     </main>
