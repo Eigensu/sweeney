@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             <a
               href="/menu"
-              className="block w-full border border-[#01382E] px-5 py-2.5 text-center font-[family-name:var(--font-poppins)] text-sm tracking-[0.15em] text-[#01382E] transition-colors duration-300 hover:bg-[#01382E]/5"
+              className="block w-full rounded-[6px] border border-[#01382E] px-5 py-2.5 text-center font-[family-name:var(--font-poppins)] text-sm tracking-[0.15em] text-[#01382E] transition-colors duration-300 hover:bg-[#01382E]/5"
             >
               EXPLORE MENU
             </a>
