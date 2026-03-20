@@ -70,20 +70,9 @@ export default function Home() {
       </section>
 
       <section className="relative z-10 w-full px-4 pb-12 sm:px-8 md:px-12">
-        <div
-          className="mx-auto w-full max-w-7xl"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(7, 1fr)",
-            gridTemplateRows: "repeat(9, auto)",
-            gap: "8px",
-          }}
-        >
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 lg:grid lg:grid-cols-7 lg:grid-rows-[repeat(9,minmax(0,auto))] lg:gap-2">
           {/* Left card — experience */}
-          <article
-            className="flex flex-col justify-between gap-5 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 p-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:p-10"
-            style={{ gridColumn: "span 3 / span 3", gridRow: "span 5 / span 5" }}
-          >
+          <article className="flex flex-col justify-between gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 p-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:p-10 lg:col-span-3 lg:col-start-1 lg:row-span-5 lg:row-start-1">
             <div className="flex flex-col gap-5">
               <h2
                 style={{
@@ -119,15 +108,8 @@ export default function Home() {
           </article>
 
           {/* Right card — image */}
-          <article
-            className="overflow-hidden rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/65 shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px]"
-            style={{
-              gridColumn: "span 4 / span 4",
-              gridColumnStart: 4,
-              gridRow: "span 5 / span 5",
-            }}
-          >
-            <div className="relative h-full min-h-[420px]">
+          <article className="overflow-hidden rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/65 shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] lg:col-span-4 lg:col-start-4 lg:row-span-5 lg:row-start-1">
+            <div className="relative min-h-[420px] w-full lg:h-full">
               <Image
                 src="/Malaika Arora.jpg"
                 alt="Malaika Arora at Sweeney"
@@ -148,12 +130,9 @@ export default function Home() {
           </article>
 
           {/* Bottom card — reservation */}
-          <article
-            className="flex items-center justify-between gap-8 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-10 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px]"
-            style={{ gridColumn: "span 7 / span 7", gridRow: "span 4 / span 4", gridRowStart: 6 }}
-          >
+          <article className="flex flex-col gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-8 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:px-10 lg:col-span-7 lg:col-start-1 lg:row-span-4 lg:row-start-6 lg:flex-row lg:items-center lg:justify-between">
             {/* Left — heading + description */}
-            <div className="flex max-w-sm flex-col gap-3">
+            <div className="flex flex-col gap-3 lg:max-w-sm">
               <h2
                 style={{
                   fontFamily: 'var(--font-ability), "Ability", serif',
@@ -163,14 +142,14 @@ export default function Home() {
               >
                 Make Reservations
               </h2>
-              <p className="max-w-[320px] font-[family-name:var(--font-poppins)] text-sm leading-relaxed opacity-70 sm:text-[0.98rem]">
+              <p className="font-[family-name:var(--font-poppins)] text-sm leading-relaxed opacity-70 sm:text-[0.98rem] lg:max-w-[320px]">
                 For table bookings and private dining inquiries, connect directly with our team. We
                 will help you plan a thoughtful dining experience.
               </p>
             </div>
 
             {/* Right — phone + WhatsApp */}
-            <div className="flex flex-col items-end gap-3 text-right">
+            <div className="flex flex-col items-start gap-3 lg:items-end lg:text-right">
               <a
                 href="tel:+917304295000"
                 className="font-[family-name:var(--font-montserrat)] text-2xl font-light tracking-tight transition-opacity hover:opacity-70 sm:text-3xl"

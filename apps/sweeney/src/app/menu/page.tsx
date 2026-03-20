@@ -51,14 +51,14 @@ export default function MenuPage() {
           Menu Gallery
         </h1>
 
-        {/* Kitchen Section (Custom User Grid 6x7) */}
+        {/* Kitchen Section (Responsive) */}
         <section className="mb-32 w-full max-w-7xl">
           <h2 className="mb-10 text-center font-[family-name:var(--font-montserrat)] text-3xl font-light tracking-[0.3em] text-[#01382E] uppercase">
             Kitchen
           </h2>
-          <div className="grid h-[1000px] w-full grid-cols-6 grid-rows-7 gap-2">
+          <div className="grid h-[1200px] w-full grid-cols-2 grid-rows-12 gap-2 md:h-[1000px] md:grid-cols-6 md:grid-rows-7">
             {/* div1 */}
-            <div className="group relative col-span-2 row-span-2 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-auto md:row-span-2 md:row-start-auto">
               <Image
                 src={foodImages[1]}
                 alt="Food 1"
@@ -67,7 +67,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div2 */}
-            <div className="group relative col-span-3 col-start-1 row-span-3 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-3 md:col-start-1 md:row-span-3 md:row-start-3">
               <Image
                 src={foodImages[2]}
                 alt="Food 2"
@@ -76,7 +76,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div3 */}
-            <div className="group relative col-span-2 col-start-1 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-4 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-1 md:row-span-2 md:row-start-6">
               <Image
                 src={foodImages[3]}
                 alt="Food 3"
@@ -85,7 +85,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div4 */}
-            <div className="group relative col-span-2 col-start-3 row-span-2 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-4 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-3 md:row-span-2 md:row-start-1">
               <Image
                 src={foodImages[4]}
                 alt="Food 4"
@@ -94,7 +94,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div5 */}
-            <div className="group relative col-span-2 col-start-3 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-2 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-3 md:row-span-2 md:row-start-6">
               <Image
                 src={foodImages[5]}
                 alt="Food 5"
@@ -103,7 +103,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div6 */}
-            <div className="group relative col-span-2 col-start-5 row-span-3 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-2 row-start-7 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-5 md:row-span-3 md:row-start-1">
               <Image
                 src={foodImages[6]}
                 alt="Food 6"
@@ -112,7 +112,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div7 */}
-            <div className="group relative col-start-4 row-span-3 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-9 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-4 md:row-span-3 md:row-start-3">
               <Image
                 src={foodImages[7]}
                 alt="Food 7"
@@ -121,7 +121,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div8 */}
-            <div className="group relative col-span-2 col-start-5 row-span-2 row-start-4 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-11 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-5 md:row-span-2 md:row-start-4">
               <Image
                 src={foodImages[8]}
                 alt="Food 8"
@@ -130,7 +130,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div9 */}
-            <div className="group relative col-start-5 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-4 row-start-9 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-5 md:row-span-2 md:row-start-6">
               <Image
                 src={foodImages[9]}
                 alt="Food 9"
@@ -139,7 +139,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div10 */}
-            <div className="group relative col-start-6 row-span-2 row-start-6 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative hidden cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-6 md:row-span-2 md:row-start-6 md:block">
               <Image
                 src={foodImages[10]}
                 alt="Food 10"
@@ -150,14 +150,14 @@ export default function MenuPage() {
           </div>
         </section>
 
-        {/* Bar Section (Custom User Grid 6x6) */}
+        {/* Bar Section (Responsive) */}
         <section className="w-full max-w-7xl">
           <h2 className="mb-10 text-center font-[family-name:var(--font-montserrat)] text-3xl font-light tracking-[0.3em] text-[#01382E] uppercase">
             Bar
           </h2>
-          <div className="grid h-[800px] w-full grid-cols-6 grid-rows-6 gap-2">
+          <div className="grid h-[800px] w-full grid-cols-2 grid-rows-8 gap-2 md:h-[800px] md:grid-cols-6 md:grid-rows-6">
             {/* div1 */}
-            <div className="group relative col-span-2 row-span-2 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-auto md:row-span-2 md:row-start-auto">
               <Image
                 src={beverageImages[0]}
                 alt="Drink 1"
@@ -166,7 +166,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div2 */}
-            <div className="group relative col-span-2 col-start-1 row-span-4 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-2 row-start-3 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-1 md:row-span-4 md:row-start-3">
               <Image
                 src={beverageImages[1]}
                 alt="Drink 2"
@@ -175,7 +175,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div3 */}
-            <div className="group relative col-start-3 row-span-6 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-4 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-3 md:row-span-6 md:row-start-1">
               <Image
                 src={beverageImages[2]}
                 alt="Drink 3"
@@ -184,7 +184,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div4 */}
-            <div className="group relative col-start-6 row-span-4 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-1 row-span-4 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-6 md:row-span-4 md:row-start-1">
               <Image
                 src={beverageImages[3]}
                 alt="Drink 4"
@@ -193,7 +193,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div5 */}
-            <div className="group relative col-span-2 col-start-4 row-span-3 row-start-1 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-2 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-4 md:row-span-3 md:row-start-1">
               <Image
                 src={beverageImages[4]}
                 alt="Drink 5"
@@ -202,7 +202,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div6 */}
-            <div className="group relative col-span-2 col-start-4 row-span-3 row-start-4 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative col-span-1 col-start-2 row-span-2 row-start-7 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-2 md:col-start-4 md:row-span-3 md:row-start-4">
               <Image
                 src={beverageImages[5]}
                 alt="Drink 6"
@@ -211,7 +211,7 @@ export default function MenuPage() {
               />
             </div>
             {/* div7 */}
-            <div className="group relative col-start-6 row-span-2 row-start-5 cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5">
+            <div className="group relative hidden cursor-pointer overflow-hidden rounded-sm border border-[#01382E]/10 bg-[#01382E]/5 md:col-span-1 md:col-start-6 md:row-span-2 md:row-start-5 md:block">
               <Image
                 src={beverageImages[6]}
                 alt="Drink 7"
