@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* Door sketch and description section */}
       <section className="pointer-events-none relative w-full px-4 pt-0 pb-32 sm:px-8 sm:pt-2 md:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-10 lg:flex-row lg:gap-32">
+        <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-center gap-10 lg:flex-row lg:gap-32">
           {/* Door sketch */}
           <div className="flex justify-center lg:w-2/5 lg:justify-end">
             <Image
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       <section className="relative z-10 w-full px-4 pb-12 sm:px-8 md:px-12">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 lg:grid lg:grid-cols-7 lg:grid-rows-[repeat(9,minmax(0,auto))] lg:gap-2">
+        <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-4 lg:grid lg:grid-cols-7 lg:grid-rows-[repeat(9,minmax(0,auto))] lg:gap-2">
           {/* Left card — experience */}
           <article className="flex flex-col justify-between gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 p-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:p-10 lg:col-span-3 lg:col-start-1 lg:row-span-5 lg:row-start-1">
             <div className="flex flex-col gap-5">
@@ -130,7 +130,10 @@ export default function Home() {
           </article>
 
           {/* Bottom card — reservation */}
-          <article className="flex flex-col gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-8 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:px-10 lg:col-span-7 lg:col-start-1 lg:row-span-4 lg:row-start-6 lg:flex-row lg:items-center lg:justify-between">
+          <article
+            id="reservations"
+            className="flex flex-col gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-8 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:px-10 lg:col-span-7 lg:col-start-1 lg:row-span-4 lg:row-start-6 lg:flex-row lg:items-center lg:justify-between"
+          >
             {/* Left — heading + description */}
             <div className="flex flex-col gap-3 lg:max-w-sm">
               <h2

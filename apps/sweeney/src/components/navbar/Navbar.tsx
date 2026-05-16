@@ -7,6 +7,7 @@ import MenuOverlay, { type NavLink } from "./MenuOverlay";
 const DEFAULT_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Reservations", href: "/" },
   { label: "Contact", href: "/" },
 ];
