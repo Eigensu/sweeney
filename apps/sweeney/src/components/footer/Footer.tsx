@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#012b24] px-6 py-10 text-[#faf9f6] sm:px-10 md:px-14">
+    <footer
+      id="contact"
+      className="w-full scroll-mt-32 bg-[#012b24] px-6 py-10 text-[#faf9f6] sm:px-10 md:px-14"
+    >
       <div className="mx-auto flex max-w-4xl flex-col items-start justify-between gap-12 md:flex-row lg:gap-24">
         {/* Branding Section */}
         <div className="flex flex-1 flex-col items-start gap-4">

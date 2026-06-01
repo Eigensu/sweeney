@@ -1,15 +1,15 @@
 "use client";
 
 import { useCallback, useState, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import HamburgerButton from "./HamburgerButton";
 import MenuOverlay, { type NavLink } from "./MenuOverlay";
 
 const DEFAULT_LINKS: NavLink[] = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/#home" },
   { label: "Menu", href: "/menu" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Reservations", href: "/" },
-  { label: "Contact", href: "/" },
+  { label: "Reservations", href: "/#reservations" },
 ];
 
 interface NavbarProps {
@@ -23,6 +23,8 @@ export default function Navbar({
   brandName = "Sweeney",
   onNavigate,
 }: NavbarProps) {
+  const router = useRouter();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -32,7 +34,10 @@ export default function Navbar({
     const handleScroll = () => {
       if (typeof window !== "undefined") {
         const currentScrollY = window.scrollY;
-        const heroHeight = window.innerHeight * 0.8; // Approximate hero section height
+        // On the home page, wait until past the hero section (~80vh).
+        // On inner pages (like Menu), fade out the logo quickly (e.g., 50px) to prevent overlap.
+        const isHomePage = pathname === "/";
+        const heroHeight = isHomePage ? window.innerHeight * 0.8 : 50;
 
         setIsScrolledPastHero(currentScrollY > heroHeight);
 
@@ -47,9 +52,12 @@ export default function Navbar({
       }
     };
 
+    // Run once on mount to set initial state correctly
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, isOpen]);
+  }, [lastScrollY, isOpen, pathname]);
 
   const toggle = useCallback(() => setIsOpen((prev) => !prev), []);
 
@@ -61,11 +69,11 @@ export default function Navbar({
       } else {
         // Default: use native navigation after close animation
         setTimeout(() => {
-          window.location.href = href;
+          router.push(href);
         }, 600);
       }
     },
-    [onNavigate]
+    [onNavigate, router]
   );
 
   return (

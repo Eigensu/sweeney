@@ -38,9 +38,11 @@ export default function RootLayout({
       <body
         className={`min-h-screen ${montserrat.variable} ${abilityFont.variable} ${poppins.variable}`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

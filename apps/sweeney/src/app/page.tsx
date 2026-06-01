@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main
+      id="home"
       style={{
         position: "relative",
         minHeight: "100vh",
@@ -132,7 +133,7 @@ export default function Home() {
           {/* Bottom card — reservation */}
           <article
             id="reservations"
-            className="flex flex-col gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-8 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:px-10 lg:col-span-7 lg:col-start-1 lg:row-span-4 lg:row-start-6 lg:flex-row lg:items-center lg:justify-between"
+            className="flex scroll-mt-32 flex-col gap-6 rounded-2xl border border-[#01382E]/20 bg-[#FAF9F6]/75 px-8 py-8 text-[#01382E] shadow-[0_14px_45px_rgba(1,56,46,0.12)] backdrop-blur-[2px] sm:px-10 lg:col-span-7 lg:col-start-1 lg:row-span-4 lg:row-start-6 lg:flex-row lg:items-center lg:justify-between"
           >
             {/* Left — heading + description */}
             <div className="flex flex-col gap-3 lg:max-w-sm">
