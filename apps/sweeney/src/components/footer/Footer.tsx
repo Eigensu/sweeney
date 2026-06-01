@@ -36,7 +36,9 @@ export default function Footer() {
             <h3 className="font-[family-name:var(--font-montserrat)] text-xs font-semibold tracking-[0.3em] uppercase opacity-60">
               Location
             </h3>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg">Khar , Mumbai</p>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg">
+              759, 5th Ln, opp. Union Bank ATM, Khar West, Mumbai, Maharashtra 400052
+            </p>
           </div>
 
           <div className="flex flex-col gap-4">
